@@ -12,14 +12,6 @@ import (
 
 var conf model.Config
 
-func updateOrders(){
-	fmt.Println("orders")
-}
-
-func updateOrderProducts()  {
-	fmt.Println("order_products")
-}
-
 func task() {
 
 	db, err := sql.Open("mysql", conf.Username+":"+conf.Password+"@tcp("+conf.Host+":"+conf.Port+")/"+conf.DB)
